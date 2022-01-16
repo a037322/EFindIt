@@ -1,13 +1,16 @@
 <resources>
     <string name="app_name">E-Find It</string>
     <string name="apelido">Apelido</string>
-    <string name="primeiro_nome">Primeiro Nome</string>
+    <string name="primeiro_nome">Nome Próprio</string>
     <string name="e_mail">E-mail</string>
     <string name="confirmar_password">Confirmar Password</string>
     <string name="password">Password</string>
-    <string name="register">Register</string>
+    <string name="register">Registar</string>
     <string name="login">Login</string>
     <string name="sign_in_with_google">Sign In With Google</string>
     <string name="esqueceu_se_da_sua_password">Esqueceu-se da sua Password?</string>
     <string name="ainda_n_o_tem_uma_conta_registe_se">Ainda não tem uma conta? Registe-se</string>
+    <string name="registe_se">Registe-se</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

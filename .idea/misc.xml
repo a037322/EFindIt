@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/drawable/ic_baseline_add_location_alt_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/drawable/ic_baseline_ev_station_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/drawable/item_selector.xml" value="0.2703125" />
         <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/drawable/login_register_button.xml" value="0.2703125" />
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/drawable/round_corner.xml" value="0.2703125" />
         <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/drawable/rounded_edit_text.xml" value="0.2703125" />
         <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/drawable/rounded_white_background.xml" value="0.2703125" />
         <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
@@ -11,6 +15,12 @@
         <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/layout/activity_splash.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/layout/fragment_adicionar.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/layout/fragment_fornecedor.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/layout/fragment_guardados.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/layout/fragment_map.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/layout/fragment_veiculo.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/rickb/AndroidStudioProjects/EFindIt/app/src/main/res/menu/item_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

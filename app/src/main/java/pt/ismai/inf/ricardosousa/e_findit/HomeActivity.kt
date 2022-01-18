@@ -2,9 +2,8 @@ package pt.ismai.inf.ricardosousa.e_findit
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.inputmethod.InputBinding
 import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -13,17 +12,13 @@ class HomeActivity : AppCompatActivity() {
     private val mapFragment = MapFragment()
     private val adicionarFragment = AdicionarFragment()
     private val guardadosFragment = GuardadosFragment()
-    //private val bottomNavigationBar: BottomNavigationView = findViewById(R.id.bottom_navigation_bar)
-    //val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_bar)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         supportActionBar?.hide()
-        //replaceFragment(mapFragment)
-
-        /*
-        bottomNavigationBar?.setOnItemSelectedListener {
+        replaceFragment(mapFragment)
+        bottom_navigation_bar?.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.nav_map -> {
                     replaceFragment(mapFragment)
@@ -41,8 +36,8 @@ class HomeActivity : AppCompatActivity() {
                     replaceFragment(guardadosFragment)
                 }
             }
-            return@setOnItemSelectedListener true
-        }*/
+            true
+        }
     }
 
     private fun replaceFragment(fragment: Fragment){

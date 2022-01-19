@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.SupportMapFragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,12 +31,19 @@ class MapFragment : Fragment() {
         }
     }
 
+    private lateinit var mMap : GoogleMap
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_map, container, false)
+        var rootView = inflater.inflate(R.layout.fragment_map, container, false)
+        var mapFragment = childFragmentManager.findFragmentById(R.id.fragment_container) as SupportMapFragment
+        mapFragment.getMapAsync {
+            googleMap -> mMap = googleMap
+        }
+        return rootView
     }
 
     companion object {

@@ -32,7 +32,9 @@ class MapFragment : Fragment() {
     }
 
     private lateinit var mMap : GoogleMap
-
+    private var mapReady = false
+    private lateinit var viewModel: HomeActivity
+    /*
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -42,10 +44,21 @@ class MapFragment : Fragment() {
         var mapFragment = childFragmentManager.findFragmentById(R.id.fragment_container) as SupportMapFragment
         mapFragment.getMapAsync {
             googleMap -> mMap = googleMap
+            mapReady = true
+            updateMap()
         }
         return rootView
+    }*/
+    /*
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        viewModel = ViewModelProviders.of(it!!).get(HomeActivity::class.java)
     }
 
+    private fun updateMap() {
+
+    }
+    */
     companion object {
         /**
          * Use this factory method to create a new instance of

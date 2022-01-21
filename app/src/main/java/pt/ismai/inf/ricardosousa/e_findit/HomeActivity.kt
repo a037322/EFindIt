@@ -2,6 +2,7 @@ package pt.ismai.inf.ricardosousa.e_findit
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
@@ -32,11 +33,13 @@ class HomeActivity : AppCompatActivity() {
         mapFragment.getMapAsync(OnMapReadyCallback {
             googleMap = it
         })*/
+
         val bottomNavigationView = findViewById<BottomNavigationView
                 >(R.id.bottom_navigation_bar)
         val navController = findNavController(R.id.nav_fragment)
-        bottomNavigationView.setupWithNavController(navController
-        )
+        bottomNavigationView.setupWithNavController(navController)
+
+
         /*
         bottom_navigation_bar?.setOnItemSelectedListener {
             when(it.itemId){

@@ -47,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
 
         loginbutton.setOnClickListener {
             if(email.text.toString().isEmpty() || password.text.toString().isEmpty()){
-                Toast.makeText(baseContext, "Insira um E-mail ",
+                Toast.makeText(baseContext, "Insira um E-mail",
                     Toast.LENGTH_SHORT).show()
             }
             else {
@@ -80,12 +80,12 @@ class LoginActivity : AppCompatActivity() {
                 else {
                     // If sign in fails, display a message to the user.
                     //Log.w(TAG, "signInWithEmail:failure", task.exception)
-                    Toast.makeText(baseContext, "Autenticação Falhada.",
+                    Toast.makeText(baseContext, "Autenticação Falhada",
                         Toast.LENGTH_SHORT).show()
                 }
             }
             .addOnFailureListener {
-                Toast.makeText(baseContext, "Insira um E-mail",
+                Toast.makeText(baseContext, "Insira um E-mail válido",
                     Toast.LENGTH_SHORT).show()
             }
     }

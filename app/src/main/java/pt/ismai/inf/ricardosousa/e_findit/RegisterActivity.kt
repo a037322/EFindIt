@@ -39,11 +39,11 @@ class RegisterActivity : AppCompatActivity() {
         register_button.setOnClickListener {
             when {
                 email.text.toString().isEmpty() -> {
-                    Toast.makeText(baseContext, "Insert Email",
+                    Toast.makeText(baseContext, "Insira um E-mail",
                         Toast.LENGTH_SHORT).show()
                 }
                 password.text.toString().isEmpty() -> {
-                    Toast.makeText(baseContext, "Insert a valid Password",
+                    Toast.makeText(baseContext, "Insira uma Password válida",
                         Toast.LENGTH_SHORT).show()
                 }/*
                 email.text.toString() != confirm_email.text.toString() -> {
@@ -51,7 +51,7 @@ class RegisterActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT).show()
                 }*/
                 password.text.toString() != confirm_password.text.toString() -> {
-                    Toast.makeText(baseContext, "Passwords are different",
+                    Toast.makeText(baseContext, "As Passwords são diferentes",
                         Toast.LENGTH_SHORT).show()
                 }
                 else -> {
@@ -66,14 +66,14 @@ class RegisterActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this){ task ->
                 if(task.isSuccessful){
-                    Toast.makeText(this, "You have successfully registered", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Registo Completo com sucesso", Toast.LENGTH_SHORT).show()
                     val myIntent = Intent(this, LoginActivity::class.java)
                     myIntent.putExtra("email",email)
                     startActivity(myIntent)
                     finish()
                 }
                 else{
-                    Toast.makeText(baseContext, "Registration failed.",
+                    Toast.makeText(baseContext, "Registo falhado",
                         Toast.LENGTH_SHORT).show()
                 }
             }

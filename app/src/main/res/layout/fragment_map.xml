@@ -13,19 +13,30 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:text="mapa" />
-
     <androidx.appcompat.widget.SearchView
         android:id="@+id/idSearchView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
         android:layout_margin="10dp"
         android:background="@drawable/round_corner"
         android:elevation="5dp"
         app:iconifiedByDefault="false"
-        app:queryHint="Search Here"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Insira um local ...">
     </androidx.appcompat.widget.SearchView>
+
+    <TextView
+        android:id="@+id/searchViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <fragment
         android:id="@+id/fragment_map_container"
         android:name="com.google.android.gms.maps.SupportMapFragment"

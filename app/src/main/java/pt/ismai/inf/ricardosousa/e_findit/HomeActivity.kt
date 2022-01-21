@@ -34,8 +34,7 @@ class HomeActivity : AppCompatActivity() {
             googleMap = it
         })*/
 
-        val bottomNavigationView = findViewById<BottomNavigationView
-                >(R.id.bottom_navigation_bar)
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_bar)
         val navController = findNavController(R.id.nav_fragment)
         bottomNavigationView.setupWithNavController(navController)
 

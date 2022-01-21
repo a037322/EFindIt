@@ -11,9 +11,16 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:text="mapa" />
-    <com.google.android.gms.maps.MapView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
-    </com.google.android.gms.maps.MapView>
+    <fragment
+        android:id="@+id/fragment_map_container"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.gms.maps.MapView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        </com.google.android.gms.maps.MapView>
+    </fragment>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapFragment">
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="pt.ismai.inf.ricardosousa.e_findit.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/adicionarFragment"
+        android:name="pt.ismai.inf.ricardosousa.e_findit.AdicionarFragment"
+        android:label="fragment_adicionar"
+        tools:layout="@layout/fragment_adicionar" />
+    <fragment
+        android:id="@+id/guardadosFragment"
+        android:name="pt.ismai.inf.ricardosousa.e_findit.GuardadosFragment"
+        android:label="fragment_guardados"
+        tools:layout="@layout/fragment_guardados" />
+    <fragment
+        android:id="@+id/fornecedorFragment"
+        android:name="pt.ismai.inf.ricardosousa.e_findit.FornecedorFragment"
+        android:label="fragment_fornecedor"
+        tools:layout="@layout/fragment_fornecedor" />
+    <fragment
+        android:id="@+id/veiculoFragment"
+        android:name="pt.ismai.inf.ricardosousa.e_findit.VeiculoFragment"
+        android:label="fragment_veiculo"
+        tools:layout="@layout/fragment_veiculo" />
+</navigation>
